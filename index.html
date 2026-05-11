@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GotoOffice | Home</title>
+    <style>
+        body { margin: 0; background: #f3f2f1; font-family: 'Segoe UI', sans-serif; }
+        .nav { background: #0078d4; padding: 12px 20px; color: white; font-weight: bold; font-size: 1.2rem; }
+        
+        .container { padding: 30px; max-width: 1000px; margin: auto; }
+        .welcome { font-size: 1.5rem; color: #323130; margin-bottom: 25px; }
+        
+        /* App Grid */
+        .app-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 20px; }
+        
+        .app-card {
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            color: #323130;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: 0.2s;
+            border-bottom: 3px solid transparent;
+        }
+        .app-card:hover { transform: translateY(-5px); border-color: #0078d4; }
+        .app-icon { font-size: 40px; margin-bottom: 10px; display: block; }
+        .app-name { font-weight: 600; font-size: 14px; }
+
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            .app-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">GotoOffice</div>
+
+<div class="container">
+    <div class="welcome">Good Afternoon</div>
+    
+    <div class="app-grid">
+        <a href="gotoofficeword.html" class="app-card">
+            <span class="app-icon" style="color: #2b579a;">📄</span>
+            <span class="app-name">Word</span>
+        </a>
+        
+        <div class="app-card" style="opacity: 0.5;">
+            <span class="app-icon" style="color: #217346;">📊</span>
+            <span class="app-name">Sheets (Alpha)</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
